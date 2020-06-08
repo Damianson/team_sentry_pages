@@ -6,3 +6,7 @@ class PageSerializer(serializers.ModelSerializer):
         model = AddPage
         fields = '__all__'
 
+class PageUpdateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = AddPage
+        fields = ['content']
